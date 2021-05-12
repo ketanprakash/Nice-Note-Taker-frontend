@@ -12,7 +12,7 @@ body{
     background: linear-gradient(45deg, #FF9CE3, #4ab3ff);
     overflow: hidden;
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 
 .visible{
@@ -113,6 +113,7 @@ main > div{
 }
 
 .signinbutton, .signupbutton{
+    font-weight: bold;
     cursor: pointer;
     margin: 15px;
     width: 100px;
@@ -121,9 +122,63 @@ main > div{
     border: 1px solid #FFFFFF;
     border-radius: 36px;
 }
-/* sigin.html styling */
+/* end sigin.html styling */
 
+/* notes.html styling */
+    .notes-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .notecontainer{
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.33);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(57px);
+    }
 
+    .notecontainer > h1{
+        margin: 15px;
+    }
+    .note{
+        border: 0px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 15px;
+        height: 250px;
+        color: black;
+    }
+    /*hide scrollbar but still scroll
+    https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll*/
+    .note {
+        overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+    .note::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+    }
+    .note:focus{
+        outline: none; 
+        border: 1px solid black;
+    }
+    .create{
+        cursor: pointer;
+        font-weight: bold;
+        margin: 15px;
+        border: 0px;
+        border-radius: 10px;
+        padding: 7px;
+        width: 100px;
+        background: rgba(255, 255, 255, 0.33);
+        border: 1px solid #FFFFFF;
+    }
+/* end notes.html styling */
 .circle1{
     /* Ellipse 1 */
     position: absolute;
