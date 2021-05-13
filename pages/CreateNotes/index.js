@@ -4,3 +4,6 @@ window.addEventListener('load', () =>{
 });
 
 const createNoteInput = document.querySelector(".note")
+createNoteInput.addEventListener("input", (e) =>{
+    console.log(e.target.value);
+})

@@ -4,3 +4,9 @@ window.addEventListener('load', () =>{
 });
 
 const createNoteInput = document.querySelector(".note")
+
+const urlParams = new URLSearchParams(window.location.search)
+
+const noteId = urlParams.get("noteId")
+
+console.log(noteId)
