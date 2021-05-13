@@ -39,6 +39,15 @@ body{
     .notecontainer > h1{
         margin: 15px;
     }
+    .note-heading{
+        border: 0px;
+        border-radius: 5px;
+        padding: 7px;
+        color: black;
+    }
+    .note-heading:focus{
+        outline: none;
+    }
     .note{
         border: 0px;
         border-radius: 10px;
@@ -60,13 +69,11 @@ body{
     }
     .note:focus{
         outline: none; 
-        border: 1px solid black;
     }
     .create{
         cursor: pointer;
         font-weight: bold;
         margin: 15px;
-        border: 0px;
         border-radius: 10px;
         padding: 7px;
         width: 100px;
