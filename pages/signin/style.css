@@ -7,7 +7,7 @@
 }
 
 body{
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw; 
     background: linear-gradient(45deg, #FF9CE3, #4ab3ff);
     overflow: hidden;
@@ -19,7 +19,9 @@ body{
     opacity: 1;
 }
 /* sigin.html styling */
-.signin-body{
+.container{
+    height: 100%;
+    width: 100%; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -91,4 +93,33 @@ body{
     background: linear-gradient(180deg, #FF57D0 0%, #0D99FF 99.99%, #0094FF 100%);
     filter: blur(10px);
     transform: rotate(18deg);
+}
+
+@media only screen and (max-width: 750px){
+    body{
+        overflow: hidden;
+    }
+    .container{
+        padding: 10px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .signin{
+        transform: translateY(0px);
+    }
+    .circle1, .circle2{
+        transform: scale(0.75);
+    }
+    .circle2{
+        bottom: -250px;
+    }
+    .signin, .signup{
+        margin: 10px;
+    }
 }

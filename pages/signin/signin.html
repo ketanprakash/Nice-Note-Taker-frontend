@@ -6,24 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
     <title>Login or Sign Up</title>
 </head>
 <body class = "signin-body">
-    <form name = "sign-in" class = "signin">
-        <h1> Sign In </h1> 
-        <input id = "signin-email" class = "field signin-email" type = "text" name = "signin-email" placeholder = "email"/> 
-        <input id = "signin-password" class = "field signin-password" type = "password" name = "signin-password" placeholder = "password"/>
-        <button class = "signinbutton"> Sign In </button>
-    </form>
-    <form name = "sign-up" class = "signup">
-        <h1> Sign Up </h1> 
-        <input id = "signup-email" class = "field signup-email" type = "email" name = "signup-email" placeholder = "Enter email"/> 
-        <input id = "signup-name" class = "field signup-name" type = "text" name = "signup-name" placeholder = "Enter name"/> 
-        <input id = "signup-password" class = "field signup-password" type = "password" name = "signup-password" placeholder = "Enter password"/> 
-        <input id = "csignup-password" class = "field csignup-password" type = "password" name = "csignup-password" placeholder = "Re-Enter password"/>
-        <button class = "signupbutton"> Sign Up </button>
-    </form>
+    <div class="container">
+        <form name = "sign-in" class = "signin">
+            <h1> Sign In </h1> 
+            <input id = "signin-email" class = "field signin-email" type = "text" name = "signin-email" placeholder = "email"/> 
+            <input id = "signin-password" class = "field signin-password" type = "password" name = "signin-password" placeholder = "password"/>
+            <button class = "signinbutton"> Sign In </button>
+        </form>
+        <form name = "sign-up" class = "signup">
+            <h1> Sign Up </h1> 
+            <input id = "signup-email" class = "field signup-email" type = "email" name = "signup-email" placeholder = "Enter email"/> 
+            <input id = "signup-name" class = "field signup-name" type = "text" name = "signup-name" placeholder = "Enter name"/> 
+            <input id = "signup-password" class = "field signup-password" type = "password" name = "signup-password" placeholder = "Enter password"/> 
+            <input id = "csignup-password" class = "field csignup-password" type = "password" name = "csignup-password" placeholder = "Re-Enter password"/>
+            <button class = "signupbutton"> Sign Up </button>
+        </form>
+    </div>
     <div class="circle1"></div>
     <div class="circle2"></div>
     <script src = "index.js"></script> 

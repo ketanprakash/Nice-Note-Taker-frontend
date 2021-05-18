@@ -109,3 +109,15 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
     filter: blur(10px);
     transform: rotate(18deg);
 }
+
+@media only screen and (max-width: 750px){
+    .circle1, .circle2{
+        transform: scale(0.75);
+    }
+    .circle2{
+        bottom: -250px;
+    }
+    .signin, .signup{
+        margin: 10px;
+    }
+}

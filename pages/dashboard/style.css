@@ -31,6 +31,7 @@ nav{
     /* width: 100%; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .welcome{
@@ -133,4 +134,22 @@ img{
     background: linear-gradient(180deg, #FF57D0 0%, #0D99FF 99.99%, #0094FF 100%);
     filter: blur(10px);
     transform: rotate(18deg);
+}
+
+@media only screen and (max-width: 750px){
+    .welcome{
+        font-size: 1.4em;
+    }
+    .nav-options{
+        font-size: 10px;
+    }
+    .circle1, .circle2{
+        transform: scale(0.75);
+    }
+    .circle2{
+        bottom: -250px;
+    }
+    .signin, .signup{
+        margin: 10px;
+    }
 }
