@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://webmonth-final.herokuapp.com";
 window.addEventListener('load', () =>{
     body.classList.add('visible');
 });

@@ -68,11 +68,16 @@ nav{
 .card-header{
     display: flex;
     justify-content: space-between;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
+.card-options{
+    display: flex; 
+}
 img{
     width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
 .card{
     width: 250px;
@@ -83,6 +88,10 @@ img{
     padding: 7px;
     background: rgba(255, 255, 255, 0.33);
     border: 1px solid #FFFFFF;
+}
+
+.invisible{
+    display: none;
 }
 
 .card-content{

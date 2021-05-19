@@ -3,7 +3,7 @@ const body = document.querySelector("body");
 window.addEventListener('load', () =>{
     body.classList.add('visible');
 });
-const apiUrl = "http://localhost:8000";
+const apiUrl = "https://webmonth-final.herokuapp.com";
 const token = localStorage.getItem("jwt");
 const createNoteInput = document.querySelector(".note");
 const headingInput = document.querySelector(".note-heading");

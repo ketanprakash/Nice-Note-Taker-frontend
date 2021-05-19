@@ -20,12 +20,13 @@
     <div class="card-container">
         <!-- <div class="card">
             <div class="card-header">
-                <div class="card-heading">Heading</div>
-                <div class="edit-note"><img src=""/></div>
-            </div>
-                <div class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, distinctio.
+                <div class="card-heading">${element.heading}</div>
+                <div class="card-options">
+                    <a href="../UpdateNotes/notes.html?noteId=${newCard.id}" target="_blank"><div class="edit-note"><img src="./edit-note.svg"/></div></a>
+                    <div class="delete-note"><img src="./delete-note.svg"/></div></a>
                 </div>
             </div>
+            <div class="card-content">${element.content}</div>
         </div> -->
     </div>
     <div class="circle1"></div>
